@@ -25,7 +25,7 @@
 						<p style="color: #4d4d4d;font-size:16px;text-align:justify;">
 							<%= @template.body %>
 						</p>
-						<h3 style="color: #4d4d4d;font-family: Verdana, sans-serif; font-size: 16px; font-weight: 100;text-decoration:underline;">
+						<!-- <h3 style="color: #4d4d4d;font-family: Verdana, sans-serif; font-size: 16px; font-weight: 100;text-decoration:underline;">
 							Aplicaciones y uso:
 						</h3>
 						<ul style="margin:0; padding:0;">
@@ -48,7 +48,7 @@
 								</p>
 							</li>
 							<% end %>
-						</ul>
+						</ul> -->
 					</div>
 					<div style="clear:both;">
 						<!-- tabla -->
@@ -192,15 +192,15 @@
 <div class="botones">
 	<%= link_to 'Edit', edit_template_path(@template) %>
 	<%= link_to 'Back', templates_path %>
-	
+
 </div>
 
 <div class="lista">
-	<h3>Aplicaciones y uso</h3>
-	<%= render 'compatibles/form', template_id: @template.id %>
+	<!-- <h3>Aplicaciones y uso</h3>
+	<%= render 'compatibles/form', template_id: @template.id %> -->
 
 
-	<ul>
+	<!-- <ul>
 		<% @template.compatibles.each do |li| %>
 		<li>
 			<p>
@@ -213,10 +213,10 @@
 
 	<h3>Recomendado para utilizar en materiales como:</h3>
 
-	<%= render 'secondlists/form', template_id: @template.id %>
+	<%= render 'secondlists/form', template_id: @template.id %> -->
 
 
-	<ul>
+	<!-- <ul>
 		<% @template.secondlists.each do |lis| %>
 		<li>
 			<p>
@@ -225,7 +225,7 @@
 			</p>
 		</li>
 		<% end %>
-	</ul>
+	</ul> -->
 
 	<h3>Ficha tecnica</h3>
 	<%= render 'tablas/form', template_id: @template.id %>
@@ -247,7 +247,7 @@
 
 <h3>Copia este texto</h3>
 <div class="output">
-	
+
 </div>
 
 
